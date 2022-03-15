@@ -4,7 +4,7 @@ from rest_framework import serializers
 # SECOND IMPORT THE MODEL YOU WANT TO SERIALIZE IT 
 from .models import Category
 
-class CategorySerializer(serializers):
+class CategorySerializer(serializers.Serializer):
     class Meta:
         model = Category
         field = ('name', 'description')
