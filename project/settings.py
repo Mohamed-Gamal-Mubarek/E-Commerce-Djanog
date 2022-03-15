@@ -126,6 +126,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 # IT TAKES BOOLEAN (' I WIL COMEBACK AGAIN TO SEE IT ')
 CORS_ALLOW_ALL_ORIGINS = True
 
