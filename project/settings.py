@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'api',  
     'api.category', 
     'api.product', 
+    # 'api.user', 
 ]
 
 MIDDLEWARE = [
@@ -132,6 +133,10 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# FOCUS IT VERY IMPORTANT TO SOLVE BUGS ISSUE USER
+# AUTH_USER_MODEL = "user.CustomUser"
+# ./FOCUS IT VERY IMPORTANT TO SOLVE BUGS ISSUE USER
 
 # IT TAKES BOOLEAN (' I WIL COMEBACK AGAIN TO SEE IT ')
 CORS_ALLOW_ALL_ORIGINS = True
